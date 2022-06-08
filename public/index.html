@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="none">
+    <!-- Use LaunchDarkly sdk -->
+    <script crossorigin="anonymous" src="https://unpkg.com/launchdarkly-js-client-sdk@2"></script>
+
+
+    <script src="client.js"></script>
+   
+    <title>Good Buy Store</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <!-- Standard Headings -->
+                <h1>Welcome to the Good Buy store.</h1>
+                <h5><em>Where pretty good is just fine!</em></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <!-- The above form looks like this -->
+                <form id="search">
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="productSearch">Search our store:</label>
+                            <input class="u-full-width" type="text" placeholder="your search here..."
+                                id="productSearch" name="productSearch">
+                        </div>
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+
+                <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+            </div>
+        </div>
+        <div class="row" id="products">
+
+        </div>
+    </div>
+</body>
+
+</html>
