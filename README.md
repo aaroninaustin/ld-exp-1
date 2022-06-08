@@ -7,13 +7,13 @@ See the basic test plan created for this exercise here:
 https://docs.google.com/document/d/152g76aQ5XVoJW99wZ9JWUKBIpTfOgZFB6a42bzvwuoQ/edit?usp=sharing
 
 
-##Install and run locally. 
+## Install and run locally. 
 
 This project is based on a slightly modified version of the Best Buy Playground API, which aims to be a training tool for students and other learners.
 
 In this case I've added a very simple store front and feature flagging using the LaunchDarkly Javascript client side SDK.
 
-###To install and run follow these simple steps.
+### To install and run follow these simple steps.
 
 Begin by cloning this repo locally. 
 
@@ -32,7 +32,7 @@ npm start
 # Best Buy API Playground started at http://localhost:3030
 ```
 
-###To recreate this experiment in LaunchDarkly follow these basic steps:
+### To recreate this experiment in LaunchDarkly follow these basic steps:
 
 Create a new flag called **Personalized Recomendations /  personalized-recomendations**
 
@@ -56,3 +56,5 @@ Also be sure to enable to **Client-side SDK availability** in the settings area 
 Toggle Targeting On then Review and Save.
 
 Now open http://localhost:3030?ref=starwars in your browser to trigger the experiment. You should see users with random keys being to be bucketed into your experiment as you refresh the page.
+
+To review and see additional information about this exercise take a look at the client.js file which contains all code for deploymeny of the feature flag.
