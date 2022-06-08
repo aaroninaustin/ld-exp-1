@@ -37,7 +37,8 @@ npm start
 Create a new flag called **Personalized Recomendations /  personalized-recomendations**
 
 With that new flag created, under Targeting, create a new rule in the  **Target who match these rules** section:
-> *if*: camp contains starwars
+> *if*: camp contains 'starwars'
+> 
 > *serve*: a percentage rollout 
 >  - 50% true
 >  - 50% false
